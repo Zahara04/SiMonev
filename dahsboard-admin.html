@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SiMonev | Bapedda Kota Malang</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="css/dashboard-admin.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--*******************
+        Preloader start
+    ********************-->
+    <!-- <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div> -->
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+      <!--**********************************
+            Nav header start
+        ***********************************-->
+      <div class="nav-header">
+
+          <a class="brand-logo" href="dahsboard-admin.html">
+            <img src="assets/logo.png" alt="" width="50" height="50" /> 
+            <div class="brand-title fw-bold text-dark" style="font-size: 2rem;">SiMonev</div></a>
+
+
+        <!-- <div class="nav-control">
+          <div class="hamburger"><span class="line"></span><span class="line"></span><span class="line"></span></div>
+        </div> -->
+      </div>
+      <!--**********************************
+            Nav header end
+        ***********************************-->
+
+      <!--**********************************
+            Header start
+        ***********************************-->
+      <div class="header">
+        <div class="header-content">
+          <nav class="navbar navbar-expand">
+            <div class="collapse navbar-collapse justify-content-between">
+              <div class="header-left">
+                <div class="dashboard_bar">Dashboard</div>
+              </div>
+
+              <ul class="navbar-nav header-right">
+                <li class="nav-item dropdown notification_dropdown">
+                  <a class="nav-link ai-icon" href="javascript:;" role="button" data-toggle="dropdown">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M21.75 14.8385V12.0463C21.7471 9.88552 20.9385 7.80353 19.4821 6.20735C18.0258 4.61116 16.0264 3.61555 13.875 3.41516V1.625C13.875 1.39294 13.7828 1.17038 13.6187 1.00628C13.4546 0.842187 13.2321 0.75 13 0.75C12.7679 0.75 12.5454 0.842187 12.3813 1.00628C12.2172 1.17038 12.125 1.39294 12.125 1.625V3.41534C9.97361 3.61572 7.97429 4.61131 6.51794 6.20746C5.06159 7.80361 4.25291 9.88555 4.25 12.0463V14.8383C3.26257 15.0412 2.37529 15.5784 1.73774 16.3593C1.10019 17.1401 0.751339 18.1169 0.75 19.125C0.750764 19.821 1.02757 20.4882 1.51969 20.9803C2.01181 21.4724 2.67904 21.7492 3.375 21.75H8.71346C8.91521 22.738 9.45205 23.6259 10.2331 24.2636C11.0142 24.9013 11.9916 25.2497 13 25.2497C14.0084 25.2497 14.9858 24.9013 15.7669 24.2636C16.548 23.6259 17.0848 22.738 17.2865 21.75H22.625C23.321 21.7492 23.9882 21.4724 24.4803 20.9803C24.9724 20.4882 25.2492 19.821 25.25 19.125C25.2486 18.117 24.8998 17.1402 24.2622 16.3594C23.6247 15.5786 22.7374 15.0414 21.75 14.8385ZM6 12.0463C6.00232 10.2113 6.73226 8.45223 8.02974 7.15474C9.32723 5.85726 11.0863 5.12732 12.9212 5.125H13.0788C14.9137 5.12732 16.6728 5.85726 17.9703 7.15474C19.2677 8.45223 19.9977 10.2113 20 12.0463V14.75H6V12.0463ZM13 23.5C12.4589 23.4983 11.9316 23.3292 11.4905 23.0159C11.0493 22.7026 10.716 22.2604 10.5363 21.75H15.4637C15.284 22.2604 14.9507 22.7026 14.5095 23.0159C14.0684 23.3292 13.5411 23.4983 13 23.5ZM22.625 20H3.375C3.14298 19.9999 2.9205 19.9076 2.75644 19.7436C2.59237 19.5795 2.50014 19.357 2.5 19.125C2.50076 18.429 2.77757 17.7618 3.26969 17.2697C3.76181 16.7776 4.42904 16.5008 5.125 16.5H20.875C21.571 16.5008 22.2382 16.7776 22.7303 17.2697C23.2224 17.7618 23.4992 18.429 23.5 19.125C23.4999 19.357 23.4076 19.5795 23.2436 19.7436C23.0795 19.9076 22.857 19.9999 22.625 20Z"
+                        fill="#36C95F"
+                      />
+                    </svg>
+                    <span class="badge light text-white bg-primary">12</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <div id="DZ_W_Notification1" class="widget-media dz-scroll p-3 height380">
+                      <ul class="timeline">
+                        <li>
+                          <div class="timeline-panel">
+                            <div class="media mr-2">
+                              <img alt="image" width="50" src="https://eres.dexignzone.com/laravel/demo/images/avatar/1.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <h6 class="mb-1">Dr sultads Send you Photo</h6>
+                              <small class="d-block">29 July 2020 - 02:26 PM</small>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="timeline-panel">
+                            <div class="media mr-2 media-info">KG</div>
+                            <div class="media-body">
+                              <h6 class="mb-1">Resport created successfully</h6>
+                              <small class="d-block">29 July 2020 - 02:26 PM</small>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="timeline-panel">
+                            <div class="media mr-2 media-success">
+                              <i class="fa fa-home"></i>
+                            </div>
+                            <div class="media-body">
+                              <h6 class="mb-1">Reminder : Treatment Time!</h6>
+                              <small class="d-block">29 July 2020 - 02:26 PM</small>
+                            </div>
+                          </div>
+                        </li> 
+                        <li>
+                          <div class="timeline-panel">
+                            <div class="media mr-2">
+                              <img alt="image" width="50" src="https://eres.dexignzone.com/laravel/demo/images/avatar/1.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <h6 class="mb-1">Dr sultads Send you Photo</h6>
+                              <small class="d-block">29 July 2020 - 02:26 PM</small>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="timeline-panel">
+                            <div class="media mr-2 media-info">KG</div>
+                            <div class="media-body">
+                              <h6 class="mb-1">Resport created successfully</h6>
+                              <small class="d-block">29 July 2020 - 02:26 PM</small>
+                            </div>
+                          </div>
+                        </li>                       
+                      </ul>
+                    </div>
+                    <a class="all-notification" href="javascript:;">See all notifications <i class="ti-arrow-right"></i></a>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown header-profile">
+                  <a class="nav-link" href="javascript:;" role="button" data-toggle="dropdown">
+                    <img src="assets/img/undraw_profile.svg" width="20" alt="" />
+                    <div class="header-info">
+                      <span>Admin Bapedda</span>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a href="profil-admin.html" class="dropdown-item ai-icon">
+                      <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                      <span class="ml-2">Profile </span>
+                    </a>
+                    <a class="dropdown-item ai-icon" href="index.html">
+                      <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                      </svg>
+                      <span class="ml-2">Logout </span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+      <!--**********************************
+            Sidebar start
+        ***********************************-->
+      <div class="deznav">
+        <div class="deznav-scroll">
+          <ul class="metismenu" id="menu">
+            <li>
+              <a class="has-arrow ai-icon" href="dahsboard-admin.html" aria-expanded="false">
+                <i class="fas fa-fw fa-tachometer-alt text-dark"></i>
+                <span class="nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a class="has-arrow ai-icon" href="tabel-usulan.html" aria-expanded="false">
+                <i class="fas fa-fw fa-list-check text-dark"></i>
+                <span class="nav-text">Tabel Usulan</span>
+              </a>
+                </li>
+            </li>
+            <li>
+              <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                <i class="fas fa-fw fa-map text-dark"></i>
+                <span class="nav-text">Peta Usulan</span>
+              </a>
+          </ul>
+
+        </div>
+      </div>
+      <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+      <!--**********************************
+            Content body start
+        ***********************************-->
+      <div class="content-body">
+        <!-- row -->
+        <!-- row -->
+        <div class="container-fluid">
+          <div class="form-head d-flex mb-3 mb-md-4 align-items-start">
+            <div class="mr-auto d-none d-lg-block">
+              <h3 class="text-black font-w600">Selamat Datang di SiMonev!</h3>
+               </div>
+
+            <div class="input-group search-area ml-auto d-inline-flex">
+              <input type="text" class="form-control" placeholder="Search here" />
+              <div class="input-group-append">
+                <button type="button" class="input-group-text"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="settings-icon ml-3"><i class="fas fa-gear mr-0"></i></a>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 col-xxl-6 col-sm-6">
+              <div class="card gradient-bx text-white bg-danger rounded">
+                <div class="card-body">
+                  <div class="media align-items-center">
+                    <div class="media-body">
+                      <p class="mb-1">Proyek Belum Dimulai</p>
+                      <div class="d-flex flex-wrap">
+                        <h2 class="fs-40 font-w600 text-white mb-0 mr-3">50</h2>
+                        <div>                          
+                        </div>
+                      </div>
+                    </div>
+                    <span class="border rounded-circle p-4">
+                      <i width="34" height="34" class="fas fa-2x fa-arrow-up"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-xxl-6 col-sm-6">
+              <div class="card gradient-bx text-white bg-success rounded">
+                <div class="card-body">
+                  <div class="media align-items-center">
+                    <div class="media-body">
+                      <p class="mb-1">Proyek Dalam Proses</p>
+                      <div class="d-flex flex-wrap">
+                        <h2 class="fs-40 font-w600 text-white mb-0 mr-3">45</h2>
+                        <div>                             
+                        </div>
+                      </div>
+                    </div>
+                    <span class="border rounded-circle p-4">
+                      <i width="34" height="34" class="fas fa-2x fa-clock-rotate-left"></i>
+
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-xxl-6 col-sm-6">
+              <div class="card gradient-bx text-white bg-info rounded">
+                <div class="card-body">
+                  <div class="media align-items-center">
+                    <div class="media-body">
+                      <p class="mb-1">Proyek Selesai</p>
+                      <div class="d-flex flex-wrap">
+                        <h2 class="fs-40 font-w600 text-white mb-0 mr-3">76</h2>
+                        <div>                         
+                        </div>
+                      </div>
+                    </div>
+                    <span class="border rounded-circle p-4">
+                      <i width="34" height="34" class="fas fa-2x fa-calendar-check"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-xxl-6 col-sm-6">
+              <div class="card gradient-bx text-white bg-secondary rounded">
+                <div class="card-body">
+                  <div class="media align-items-center">
+                    <div class="media-body">
+                      <p class="mb-1">Jumlah Usulan</p>
+                      <div class="d-flex flex-wrap">
+                        <h2 class="fs-40 font-w600 text-white mb-0 mr-3">150</h2>
+                        <div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="border rounded-circle p-4">
+                      <i width="34" height="34" class="fas fa-2x fa-user-clock"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-xxl-4 col-lg-4">
+              <div class="card">
+                <div class="card-header border-0 pb-0">
+                  <h3 class="fs-20 mb-0 text-black">Usulan</h3>
+
+                </div>
+                <div class="card-body">
+                  <div class="">
+                    <svg viewBox="0 0 1000 1200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                      <g dominant-baseline="middle" text-anchor="end" font-size="3em">                        
+                        <text x="90" y="100">100</text>
+                        <text x="90" y="300">80</text>
+                        <text x="90" y="500">60</text>
+                        <text x="90" y="700">40</text>
+                        <text x="90" y="900">20</text>
+                        <text x="85" y="1100">0</text>
+                      </g>
+                      <g dominant-baseline="hanging" text-anchor="middle" font-size="3em">
+                        <text x="170" y="1110">2018</text>
+                        <text x="320" y="1110">2019</text>
+                        <text x="470" y="1110">2020</text>
+                        <text x="620" y="1110">2021</text>
+                        <text x="770" y="1110">2022</text>                        
+                      </g>
+                      <path fill="none" stroke="#000" stroke-width="1px" stroke-dasharray="3px"
+                        d="M100,100 H900 M100,300 H900 M100,500 H900 M100,700 H900 M100,900 H900" />
+                      <g transform="scale(1 -1)" fill="rgb(54, 157, 201)">
+                        <rect id="balok-a" x="150" y="-1100" height="600" width="50" />
+                        <rect id="balok-b" x="300" y="-1100" height="590" width="50" />
+                        <rect id="balok-c" x="450" y="-1100" height="660" width="50" />
+                        <rect id="balok-d" x="600" y="-1100" height="790" width="50" />
+                        <rect id="balok-e" x="750" y="-1100" height="900" width="50" />                        
+                      </g>
+                      <polyline fill="none" stroke="#000" stroke-width="3px" points="100,1100 900,1100" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-9 col-xxl-8 col-lg-8">
+              <div class="card">
+                <div class="card-header d-sm-flex d-block border-0 pb-0">
+                  <h3 class="fs-20 mb-3 mb-sm-0 text-black">Peta Usulan</h3>
+                  <div class="card-action card-tabs mt-3 mt-sm-0 mt-3 mt-sm-0">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div>
+                     <img src="assets/map-malang.png" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                  <h4 class="card-title">Progress Usulan</h4>
+                  <a class="text-success" href="tabel-usulan.html">View More > ></a>
+              </div>
+              <div class="card-body">
+                  <div class="table-responsive">
+                    <table id="example3" class="display min-w850 dataTable no-footer" role="grid" aria-describedby="example3_info" width="100%">
+                          <thead>
+                              <tr role="row">
+                                <th class="sorting" tabindex="0" aria-controls="example3" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 67.6875px;">Usulan</th>
+                                <th class="sorting" tabindex="0" aria-controls="example3" rowspan="1" colspan="1" aria-label="Department: activate to sort column ascending" style="width: 88.9062px;">Sub Kegiatan</th>
+                                <th class="sorting" tabindex="0" aria-controls="example3" rowspan="1" colspan="1" aria-label="Gender: activate to sort column ascending" style="width: 56.0156px;">Perangkat Daerah</th>
+                                <th class="sorting" tabindex="0" aria-controls="example3" rowspan="1" colspan="1" aria-label="Education: activate to sort column ascending" style="width: 77.3438px;">Status</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr role="row" class="odd">
+                                  <td>Saluran Box U Beton Bertulang</td>
+                                  <td>1.03.10.2.01.06 Peningkatan Saluran Drainase Perkotaan</td>
+                                  <td>Dinas Pekerjaan Umum, Penataan Ruang, Perumahan dan Kawasan Pemukiman</td>
+                                  <td><span class="badge light badge-info"><i class="fa fa-circle mr-1"></i> On Progress</span></td>										
+                              </tr>
+                              <tr role="row" class="even">
+                                  <td>Pemasangan PJU di Kecamatan</td>
+                                  <td>1.03.10.2.01.05 Pembangunan Jalan</td>
+                                  <td>Dinas Pekerjaan Umum, Penataan Ruang, Perumahan dan Kawasan Pemukiman</td>
+                                  <td><span class="badge light badge-info"><i class="fa fa-circle mr-1"></i> On Progress</span></td>
+                              </tr>
+                            </tbody>
+                      </table>
+                      
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+          </div>
+        </div>
+      </div>
+      <!--**********************************
+            Content body end
+        ***********************************-->
+
+      <!--**********************************
+            Footer start
+        ***********************************-->
+
+      <div class="footer">
+        <div class="copyright">
+          <p>© All rights reserved. Made with <span style="color: #e25555;">&#9829;</span> by SiMonev</p>
+        </div>
+      </div>
+      <!--**********************************
+            Footer end
+        ***********************************-->
+
+      <!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+      <!--**********************************
+           Support ticket button end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="https://eres.dexignzone.com/laravel/demo/vendor/global/global.min.js" type="text/javascript"></script>
+    <script src="https://eres.dexignzone.com/laravel/demo/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
+    <script src="vendor/Chart.bundle.min.js" type="text/javascript"></script>
+    <script src="https://eres.dexignzone.com/laravel/demo/vendor/owl-carousel/owl.carousel.js" type="text/javascript"></script>
+    <script src="https://eres.dexignzone.com/laravel/demo/vendor/apexchart/apexchart.js" type="text/javascript"></script>
+    <script src="https://eres.dexignzone.com/laravel/demo/js/dashboard/dashboard-1.js" type="text/javascript"></script>
+    <script src="https://eres.dexignzone.com/laravel/demo/js/custom.min.js" type="text/javascript"></script>
+    <script src="https://eres.dexignzone.com/laravel/demo/js/deznav-init.js" type="text/javascript"></script>
+
+    <!--		<script src="https://eres.dexignzone.com/laravel/demo/js/custom.min.js" type="text/javascript"></script>
+			<script src="https://eres.dexignzone.com/laravel/demo/js/deznav-init.js" type="text/javascript"></script> -->
+    <!--	
+ 	--></body>
+</html>

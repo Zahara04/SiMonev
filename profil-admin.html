@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SiMonev | Bapedda Kota Malang</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="css/dashboard-admin.css" rel="stylesheet" type="text/css" />
+<style>
+    .container{
+        height: 60vh;
+       }
+
+       .card{
+        padding: 8px;
+        position: relative;
+       }
+
+       .upper{
+        height: 100px;
+       }
+
+       .upper img{
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+       }
+
+       .user{
+        position: relative;
+       }
+
+       .profile img{
+        height: 100px;
+        width: 100px;
+        margin-top:2px;       
+       }
+
+       .profile{
+        position: absolute;
+        left: 2%;
+        bottom: -200px;
+        height: 90px;
+        width: 90px;
+       }
+       .text{
+        margin-left: 150px; 
+        margin-top: 165px;
+       }
+        .text2{
+            margin-left: 200px;
+            margin-top: -54px;
+        }
+
+</style>  
+</head>
+  <body>
+    <!--*******************
+        Preloader start
+    ********************-->
+    <!-- <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div> -->
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+      <!--**********************************
+            Nav header start
+        ***********************************-->
+      <div class="nav-header">
+
+          <a class="brand-logo" href="dahsboard-admin.html">
+            <img src="assets/logo.png" alt="" width="50" height="50" /> 
+            <div class="brand-title fw-bold text-dark" style="font-size: 2rem;">SiMonev</div></a>
+
+
+        <!-- <div class="nav-control">
+          <div class="hamburger"><span class="line"></span><span class="line"></span><span class="line"></span></div>
+        </div> -->
+      </div>
+      <!--**********************************
+            Nav header end
+        ***********************************-->
+
+      <!--**********************************
+            Header start
+        ***********************************-->
+      <div class="header">
+        <div class="header-content">
+          <nav class="navbar navbar-expand">
+            <div class="collapse navbar-collapse justify-content-between">
+              <div class="header-left">
+                <div class="dashboard_bar">Profil</div>
+              </div>
+
+              <ul class="navbar-nav header-right">
+                <li class="nav-item dropdown notification_dropdown">
+                  <a class="nav-link ai-icon" href="javascript:;" role="button" data-toggle="dropdown">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M21.75 14.8385V12.0463C21.7471 9.88552 20.9385 7.80353 19.4821 6.20735C18.0258 4.61116 16.0264 3.61555 13.875 3.41516V1.625C13.875 1.39294 13.7828 1.17038 13.6187 1.00628C13.4546 0.842187 13.2321 0.75 13 0.75C12.7679 0.75 12.5454 0.842187 12.3813 1.00628C12.2172 1.17038 12.125 1.39294 12.125 1.625V3.41534C9.97361 3.61572 7.97429 4.61131 6.51794 6.20746C5.06159 7.80361 4.25291 9.88555 4.25 12.0463V14.8383C3.26257 15.0412 2.37529 15.5784 1.73774 16.3593C1.10019 17.1401 0.751339 18.1169 0.75 19.125C0.750764 19.821 1.02757 20.4882 1.51969 20.9803C2.01181 21.4724 2.67904 21.7492 3.375 21.75H8.71346C8.91521 22.738 9.45205 23.6259 10.2331 24.2636C11.0142 24.9013 11.9916 25.2497 13 25.2497C14.0084 25.2497 14.9858 24.9013 15.7669 24.2636C16.548 23.6259 17.0848 22.738 17.2865 21.75H22.625C23.321 21.7492 23.9882 21.4724 24.4803 20.9803C24.9724 20.4882 25.2492 19.821 25.25 19.125C25.2486 18.117 24.8998 17.1402 24.2622 16.3594C23.6247 15.5786 22.7374 15.0414 21.75 14.8385ZM6 12.0463C6.00232 10.2113 6.73226 8.45223 8.02974 7.15474C9.32723 5.85726 11.0863 5.12732 12.9212 5.125H13.0788C14.9137 5.12732 16.6728 5.85726 17.9703 7.15474C19.2677 8.45223 19.9977 10.2113 20 12.0463V14.75H6V12.0463ZM13 23.5C12.4589 23.4983 11.9316 23.3292 11.4905 23.0159C11.0493 22.7026 10.716 22.2604 10.5363 21.75H15.4637C15.284 22.2604 14.9507 22.7026 14.5095 23.0159C14.0684 23.3292 13.5411 23.4983 13 23.5ZM22.625 20H3.375C3.14298 19.9999 2.9205 19.9076 2.75644 19.7436C2.59237 19.5795 2.50014 19.357 2.5 19.125C2.50076 18.429 2.77757 17.7618 3.26969 17.2697C3.76181 16.7776 4.42904 16.5008 5.125 16.5H20.875C21.571 16.5008 22.2382 16.7776 22.7303 17.2697C23.2224 17.7618 23.4992 18.429 23.5 19.125C23.4999 19.357 23.4076 19.5795 23.2436 19.7436C23.0795 19.9076 22.857 19.9999 22.625 20Z"
+                        fill="#36C95F"
+                      />
+                    </svg>
+                    <span class="badge light text-white bg-primary">12</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <div id="DZ_W_Notification1" class="widget-media dz-scroll p-3 height380">
+                      <ul class="timeline">
+                        <li>
+                          <div class="timeline-panel">
+                            <div class="media mr-2">
+                              <img alt="image" width="50" src="https://eres.dexignzone.com/laravel/demo/images/avatar/1.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <h6 class="mb-1">Dr sultads Send you Photo</h6>
+                              <small class="d-block">29 July 2020 - 02:26 PM</small>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="timeline-panel">
+                            <div class="media mr-2 media-info">KG</div>
+                            <div class="media-body">
+                              <h6 class="mb-1">Resport created successfully</h6>
+                              <small class="d-block">29 July 2020 - 02:26 PM</small>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="timeline-panel">
+                            <div class="media mr-2 media-success">
+                              <i class="fa fa-home"></i>
+                            </div>
+                            <div class="media-body">
+                              <h6 class="mb-1">Reminder : Treatment Time!</h6>
+                              <small class="d-block">29 July 2020 - 02:26 PM</small>
+                            </div>
+                          </div>
+                        </li> 
+                        <li>
+                          <div class="timeline-panel">
+                            <div class="media mr-2">
+                              <img alt="image" width="50" src="https://eres.dexignzone.com/laravel/demo/images/avatar/1.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <h6 class="mb-1">Dr sultads Send you Photo</h6>
+                              <small class="d-block">29 July 2020 - 02:26 PM</small>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="timeline-panel">
+                            <div class="media mr-2 media-info">KG</div>
+                            <div class="media-body">
+                              <h6 class="mb-1">Resport created successfully</h6>
+                              <small class="d-block">29 July 2020 - 02:26 PM</small>
+                            </div>
+                          </div>
+                        </li>                       
+                      </ul>
+                    </div>
+                    <a class="all-notification" href="javascript:;">See all notifications <i class="ti-arrow-right"></i></a>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown header-profile">
+                  <a class="nav-link" href="javascript:;" role="button" data-toggle="dropdown">
+                    <img src="assets/img/undraw_profile.svg" width="20" alt="" />
+                    <div class="header-info">
+                      <span>Admin Bapedda</span>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a href="profil-admin.html" class="dropdown-item ai-icon">
+                      <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                      <span class="ml-2">Profile </span>
+                    </a>
+                    <a class="dropdown-item ai-icon" href="index.html">
+                      <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                      </svg>
+                      <span class="ml-2">Logout </span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+      <!--**********************************
+            Sidebar start
+        ***********************************-->
+      <div class="deznav">
+        <div class="deznav-scroll">
+          <ul class="metismenu" id="menu">
+            <li>
+              <a class="has-arrow ai-icon" href="dahsboard-admin.html" aria-expanded="false">
+                <i class="fas fa-fw fa-tachometer-alt text-dark"></i>
+                <span class="nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a class="has-arrow ai-icon" href="tabel-usulan.html" aria-expanded="false">
+                <i class="fas fa-fw fa-list-check text-dark"></i>
+                <span class="nav-text">Tabel Usulan</span>
+              </a>
+                </li>
+            </li>
+            <li>
+              <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                <i class="fas fa-fw fa-map text-dark"></i>
+                <span class="nav-text">Peta Usulan</span>
+              </a>
+          </ul>
+
+        </div>
+      </div>
+      <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+      <!--**********************************
+            Content body start
+        ***********************************-->
+      <div class="content-body">
+        <div  class="container-fluid">
+        <!-- row -->
+                <div class="row">
+                <div class="col-12 container d-flex justify-content-center align-items-center">
+                        <div class="card">
+                                 <div class="upper">
+                                   <img src="assets/img/profil-admin.png" class="img-fluid">                
+                                 </div>       
+                                 <div class="user text-center">    
+                                   <div class="profile">
+                                     <img src="assets/img/undraw_profile.svg" class="" width="80">  
+                                   </div>  
+                                 </div>       
+                                 <div class="text">    
+                                    <h4 style="color: #6CC51D;">Admin Bapedda</h4>                      
+                                    <h6 style="color: #828690;">Super Admin</h6> 
+                                    <h4 class="text2" style="color: black;">Superadmin90@gmail.com</h4>                     
+                                 </div>                                            
+                                </div>
+                    </div>
+                <div class="col-xl-3 col-xxl-4 col-lg-4">
+        <div class="card">
+          <div class="text-center">
+            <img src="assets/img/undraw_profile.svg" class="mt-2" style="height: 70%; width: 70%;">
+          </div>
+            <h6 class="text-start text-success">Nama Pengguna</h6>
+            <p class="text-start">Admin Bapedda</p>
+            <h6 class="text-start text-success">Email</h6>
+            <p class="text-start">Superadmin90@gmail.com</p>
+            <h6 class="text-start text-success">Catatan</h6>
+            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates incidunt ratione? Eveniet delectus harum quibusdam ratione deserunt, quos veritatis quod nisi, enim velit officia doloremque omnis obcaecati amet! Exercitationem!</p>
+        <br>
+        <a href="#" class="btn btn-outline-success">Ganti Password</a>
+        </div>
+                    </div>
+                <div class="col-xl-9 col-xxl-8 col-lg-8">
+        <div class="card">
+            <div class="card-header d-sm-flex d-block border-0 pb-0">
+                <h3 class="fs-20 mb-3 mb-sm-0 text-black">Perbarui Profil</h3>
+                <div class="card-action card-tabs mt-3 mt-sm-0 mt-3 mt-sm-0">
+                </div></div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Nama Pengguna</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Nama Lengkap</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email</label>
+                          <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Catatan</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Simpan</button>
+                      </form>
+                </div>
+
+        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <!--**********************************
+            Content body end
+        ***********************************-->
+
+      <!--**********************************
+            Footer start
+        ***********************************-->
+
+      <div class="footer">
+        <div class="copyright">
+          <p>© All rights reserved. Made with <span style="color: #e25555;">&#9829;</span> by SiMonev</p>
+        </div>
+      </div>
+      <!--**********************************
+            Footer end
+        ***********************************-->
+
+      <!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+      <!--**********************************
+           Support ticket button end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="https://eres.dexignzone.com/laravel/demo/vendor/global/global.min.js" type="text/javascript"></script>
+    <script src="https://eres.dexignzone.com/laravel/demo/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
+    <script src="vendor/Chart.bundle.min.js" type="text/javascript"></script>
+    <script src="https://eres.dexignzone.com/laravel/demo/vendor/owl-carousel/owl.carousel.js" type="text/javascript"></script>
+    <script src="https://eres.dexignzone.com/laravel/demo/vendor/apexchart/apexchart.js" type="text/javascript"></script>
+    <script src="https://eres.dexignzone.com/laravel/demo/js/dashboard/dashboard-1.js" type="text/javascript"></script>
+    <script src="https://eres.dexignzone.com/laravel/demo/js/custom.min.js" type="text/javascript"></script>
+    <script src="https://eres.dexignzone.com/laravel/demo/js/deznav-init.js" type="text/javascript"></script>
+
+    <!--		<script src="https://eres.dexignzone.com/laravel/demo/js/custom.min.js" type="text/javascript"></script>
+			<script src="https://eres.dexignzone.com/laravel/demo/js/deznav-init.js" type="text/javascript"></script> -->
+    <!--	
+ 	--></body>
+</html>
